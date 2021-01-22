@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../js/javascripttv.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">The Flash</label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="episodes.html">Episodes</a></li>
+        <li><a href="cast.html">Cast</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="galerij.html">Galerij</a></li>
+        <li><a href="geschiedenis.html">Geschiedenis</a></li>
+        <li><a href="gastenboek.html">Gastenboek</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <section class="img-text">
+        <a href="https://www.imdb.com/title/tt3107288/">
+        <img src="../images/TheFlashSea4.png">
+        </a>
+        <h1>The Flash</h1>
+        <p>
+          The Flash is een Amerikaanse superheldenserie, ontwikkeld door Greg Berlanti, Andrew Kreisberg en Geoff Johns. 
+          De serie is gebaseerd op het personage Flash van DC Comics. 
+          Het is de tweede live-action tv-serie rondom dit personage.
+
+          De serie is een spin-off van de tv-serie Arrow, en speelt zich dan ook af in hetzelfde fictieve universum als die serie. 
+          Het personage Barry Allen maakte zijn debuut in seizoen 2 van Arrow, in het tweeluik "The Scientist", waarin ook te zien is hoe hij zijn superkrachten krijgt.
+        </p>
+    </section>
+    <section class="table-serie">
+      <table>
+        <tr>
+          <th>Seizoen nr</th>
+          <th>Eerst afl. air datum</th>
+          <th>Tijd</th>
+          <th>Villain</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>7 oktober 2014</td>
+          <td>20:00 uur EST</td>
+          <td>Reverse Flash</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>6 oktober 2015</td>
+          <td>20:00 uur EST</td>
+          <td>Zoom</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>4 oktober 2016</td>
+          <td>20:00 uur EST</td>
+          <td>Savitar</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10 oktober 2017</td>
+          <td>20:00 uur EST</td>
+          <td>The Thinker</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>9 oktober 2018</td>
+          <td>20:00 uur EST</td>
+          <td>Cicada</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>8 oktober 2019</td>
+          <td>20:00 uur EST</td>
+          <td>Bloodwork</td>
+        </tr>
+      </table>
+    </section>
+    <section class="date">
+      <h1>Huidige datum & tijd:</h1>
+      <p id="datum"></p>
+      <script>
+        var today = new Date();
+
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+        var dateTime = date+' '+time;
+
+        document.getElementById("datum").innerHTML = dateTime;
+    </script>
+    </section>
+    <br>
+    <br>
+    <section class="login">
+      <h1>Login</h1>
+      <input type="text" id="naam" name="naam"> <br>
+      <input type="button" onclick="login()" id="submit" name="log-in" value="Login">
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <a href="https://facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+      <p>
+        Copyright &copy; 2021 <i>Ontworpen door: Jarvin Siegers.</i>
+        Alle rechten voorbehouden.
+      </p>
+    </footer>
+  </body>
+</html>

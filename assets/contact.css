@@ -1,0 +1,21 @@
+form label {
+    line-height: 150%;
+    font-size: .85em;
+    color: #fff;
+  }
+  input[type=submit] {
+    color: black;
+    font-size: 14px;
+    padding: 7px 13px;
+    border-radius: 3px;
+  }
+
+  input[type=submit]:hover {
+    background: #e04444;
+    transition: .4s;
+    cursor: pointer;
+   }
+
+   legend {
+     color: #fff;
+   }
